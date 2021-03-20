@@ -5,6 +5,8 @@ import { handleGoogleSignIn, initializeLogFramework, handleSignOut, handleFbSign
 import { Link } from 'react-router-dom';
 import './Login.css';
 import { Container } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookSquare, faGoogle } from '@fortawesome/free-brands-svg-icons'
 
 function Login() {
     const [newUser, setNewUser] = useState(false);
@@ -99,13 +101,13 @@ function Login() {
                     <button style={{ backgroundColor: 'rgb(255, 86, 56)', width: '39%'}}>Login</button>
                     <br />
                     <br />
-                    <p>Don't have an account? <Link to='/signin'><span>create an account</span></Link></p>
+                    <p>Don't have an account? <Link to='/signin'><span> Create an account</span></Link>.</p>
                 </form>
                 <div>
-                    <button style={{ backgroundColor: 'gray', width: '39%'}} onClick={googleSignIn}>Log in with Google</button>
+                    <button style={{ backgroundColor: 'gray', width: '39%'}} onClick={googleSignIn}><FontAwesomeIcon icon={faGoogle} /> Log in with Google</button>
                     <br />
                     <br />
-                    <button style={{ backgroundColor: 'blue', width: '39%'}} onClick={fbSignIn}>Log in with Facebook</button>
+                    <button style={{ backgroundColor: 'blue', width: '39%'}} onClick={fbSignIn}><FontAwesomeIcon icon={faFacebookSquare} />  Log in with Facebook</button>
                 </div>
                 <p style={{ color: 'red' }}>{user.error}</p>
                 {
