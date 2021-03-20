@@ -95,12 +95,13 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         if (user.email && user.password) {
-            firebase.auth().createUserWithEmailAndPassword(user.email, user.password)
-                .then((res) => {
+            firebase.auth().signInWithEmailAndPassword(user.email, user.password)
+                .then(res => {
                     const newUserInfo = { ...user };
                     newUserInfo.error = '';
                     newUserInfo.success = true;
                     setUser(newUserInfo);
+                    console.log('sign in user info', res.user);
                 })
                 .catch((error) => {
                     const newUserInfo = { ...user };
@@ -114,8 +115,6 @@ const Login = () => {
 
     return (
         <div>
-            <input type="checkbox" name="newUser" id="" />
-            <label htmlFor="newUser">New User Sign Up</label>
             <form onSubmit={handleSubmit}>
                 <h1>Login</h1>
                 <input type="text" onBlur={handleBlur} placeholder="Your Name" />
@@ -124,6 +123,9 @@ const Login = () => {
                 <br />
                 <input type="password" onBlur={handleBlur} name="password" id="" placeholder="Your Password" required />
                 <br />
+                <input type="checkbox" name="newUser" id="" />
+                <label htmlFor="newUser">Remember me</label>
+                <br/>
                 <button>Login</button>
                 <br />
                 <p>Don't have an account? <Link to='/signin'>create an account</Link></p>
@@ -133,11 +135,11 @@ const Login = () => {
             }
             <p>{user.email}</p> */}
             <div>
-                <button onClick={handleSignOut}>Sign Out</button>
+                {/* <button onClick={handleSignOut}>Sign Out</button>
+                <br /> */}
+                <button onClick={handleGoogleSignIn}>Log in with Google</button>
                 <br />
-                <button onClick={handleGoogleSignIn}>Sign in with Google</button>
-                <br />
-                <button onClick={handleFacebookSignIn}>Sign in with Facebook</button>
+                <button onClick={handleFacebookSignIn}>Log in with Facebook</button>
             </div>
             <p style={{ color: 'red' }}>{user.error}</p>
             {
