@@ -1,0 +1,14 @@
+.input-item{
+    width: 40%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+span{
+    color:rgb(255, 86, 56);
+}
+button{
+    color:white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}

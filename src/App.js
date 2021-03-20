@@ -12,6 +12,7 @@ import Destination from './Components/Destination/Destination';
 import Header from './Components/Header/Header';
 import { createContext, useState } from 'react';
 import Signin from './Components/Login/Signin';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
 
@@ -31,9 +32,9 @@ function App() {
           <Route path="/signin">
             <Signin />
           </Route>
-          <Route path="/destination">
+          <PrivateRoute path="/destination">
             <Destination />
-          </Route>
+          </PrivateRoute>
           <Route exact path="/">
             <Home />
           </Route>

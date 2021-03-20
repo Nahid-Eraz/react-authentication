@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from '../../images/Urban Riders.png'
+import { UserContext } from '../../App';
 
 const Header = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    let displayName = "Sign in";
+    // if(loggedInUser.name != ""){
+    //     displayName = loggedInUser.name;
+    // }
+    console.log(displayName);
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
@@ -17,7 +24,7 @@ const Header = () => {
                         <Link className="nav-link" to="/destination">Destination</Link>
                         <Link className="nav-link" to="/blog">Blog</Link>
                         <Link className="nav-link" to="/contact">Contact</Link>
-                        <Link className="nav-link" to="/login">Login</Link>
+                        <Link className="nav-link" to="/signin">{displayName}</Link>
                     </div>
                 </div>
             </div>
