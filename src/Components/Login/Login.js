@@ -81,40 +81,38 @@ function Login() {
         e.preventDefault();
     }
     return (
-        <Container>
-            <div style={{ textAlign: 'center' }} >
-                <form onSubmit={handleSubmit} >
-                    <h1>Login</h1>
-                    <input className="input-item" type="text" onBlur={handleBlur} placeholder="Your Name" />
-                    <br />
-                    <br />
-                    <input className="input-item" type="text" onBlur={handleBlur} name="email" placeholder="Your Email" required />
-                    <br />
-                    <br />
-                    <input className="input-item" type="password" onBlur={handleBlur} name="password" id="" placeholder="Your Password" required />
-                    <br />
-                    <br />
-                    <input type="checkbox" name="newUser" id="" />
-                    <label htmlFor="newUser">Remember me</label>
-                    <br />
-                    <br />
-                    <button style={{ backgroundColor: 'rgb(255, 86, 56)', width: '39%'}}>Login</button>
-                    <br />
-                    <br />
-                    <p>Don't have an account? <Link to='/signin'><span> Create an account</span></Link>.</p>
-                </form>
-                <div>
-                    <button style={{ backgroundColor: 'gray', width: '39%'}} onClick={googleSignIn}><FontAwesomeIcon icon={faGoogle} /> Log in with Google</button>
-                    <br />
-                    <br />
-                    <button style={{ backgroundColor: 'blue', width: '39%'}} onClick={fbSignIn}><FontAwesomeIcon icon={faFacebookSquare} />  Log in with Facebook</button>
-                </div>
-                <p style={{ color: 'red' }}>{user.error}</p>
-                {
-                    user.success && <p style={{ color: 'green' }}>User Created Successfully</p>
-                }
+        <div style={{ textAlign: 'center' }} >
+            <form onSubmit={handleSubmit} >
+                <h1>Login</h1>
+                <input className="input-item" type="text" onBlur={handleBlur} placeholder="Your Name" />
+                <br />
+                <br />
+                <input className="input-item" type="text" onBlur={handleBlur} name="email" placeholder="Your Email" required />
+                <br />
+                <br />
+                <input className="input-item" type="password" onBlur={handleBlur} name="password" id="" placeholder="Your Password" required />
+                <br />
+                <br />
+                <input type="checkbox" name="newUser" id="" />
+                <label htmlFor="newUser"> Remember me</label>
+                <br />
+                <br />
+                <button style={{ backgroundColor: 'rgb(255, 86, 56)', width: '39%' }}>Login</button>
+                <br />
+                <br />
+                <p>Don't have an account? <Link to='/signin'><span> Create an account</span></Link>.</p>
+            </form>
+            <div>
+                <button style={{ backgroundColor: 'gray', width: '39%' }} onClick={googleSignIn}><FontAwesomeIcon icon={faGoogle} /> Log in with Google</button>
+                <br />
+                <br />
+                <button style={{ backgroundColor: 'blue', width: '39%' }} onClick={fbSignIn}><FontAwesomeIcon icon={faFacebookSquare} />  Log in with Facebook</button>
             </div>
-        </Container>
+            <p style={{ color: 'red' }}>{user.error}</p>
+            {
+                user.success && <p style={{ color: 'green' }}>User Created Successfully</p>
+            }
+        </div>
     );
 };
 

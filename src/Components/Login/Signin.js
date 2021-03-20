@@ -83,40 +83,38 @@ function Signin() {
     }
 
     return (
-        <Container>
-            <div style={{ textAlign: 'center' }}>
-                <form onSubmit={handleSubmit} >
-                    <h1>Sign In</h1>
-                    <input className="input-item" type="text" onBlur={handleBlur} placeholder="Your Name" />
-                    <br />
-                    <br />
-                    <input className="input-item" type="text" onBlur={handleBlur} name="email" placeholder="Your Email" required />
-                    <br />
-                    <br />
-                    <input className="input-item" type="password" onBlur={handleBlur} name="password" id="1" placeholder="Your Password" required />
-                    <br />
-                    <br />
-                    <input className="input-item" type="password" onBlur={handleBlur} name="confirmPassword" id="2" placeholder="Confirm Password" required />
-                    <br />
-                    <br />
-                    <button style={{ backgroundColor: 'rgb(255, 86, 56)', width: '39%'}}>Sign in</button>
-                    <br />
-                    <br />
-                    <p>Already have an account, <Link to='/login'><span > Log in</span></Link>.</p>
-                </form>
+        <div style={{ textAlign: 'center' }}>
+            <form onSubmit={handleSubmit} >
+                <h1>Sign In</h1>
+                <input className="input-item" type="text" onBlur={handleBlur} placeholder="Your Name" />
+                <br />
+                <br />
+                <input className="input-item" type="text" onBlur={handleBlur} name="email" placeholder="Your Email" required />
+                <br />
+                <br />
+                <input className="input-item" type="password" onBlur={handleBlur} name="password" id="1" placeholder="Your Password" required />
+                <br />
+                <br />
+                <input className="input-item" type="password" onBlur={handleBlur} name="confirmPassword" id="2" placeholder="Confirm Password" required />
+                <br />
+                <br />
+                <button style={{ backgroundColor: 'rgb(255, 86, 56)', width: '39%' }}>Sign in</button>
+                <br />
+                <br />
+                <p>Already have an account, <Link to='/login'><span > Log in</span></Link>.</p>
+            </form>
 
-                <div>
-                    <button style={{ backgroundColor: 'gray', width: '39%'}} onClick={googleSignIn}><FontAwesomeIcon icon={faGoogle} /> Sign in with Google</button>
-                    <br />
-                    <br />
-                    <button style={{ backgroundColor: 'blue', width: '39%'}} onClick={fbSignIn}><FontAwesomeIcon icon={faFacebookSquare} />  Sign in with Facebook</button>
-                </div>
-                <p style={{ backgroundColor: 'red' }}>{user.error}</p>
-                {
-                    user.success && <p style={{ color: 'green' }}>User Created Successfully</p>
-                }
+            <div>
+                <button style={{ backgroundColor: 'gray', width: '39%' }} onClick={googleSignIn}><FontAwesomeIcon icon={faGoogle} /> Sign in with Google</button>
+                <br />
+                <br />
+                <button style={{ backgroundColor: 'blue', width: '39%' }} onClick={fbSignIn}><FontAwesomeIcon icon={faFacebookSquare} />  Sign in with Facebook</button>
             </div>
-        </Container>
+            <p style={{ backgroundColor: 'red' }}>{user.error}</p>
+            {
+                user.success && <p style={{ color: 'green' }}>User Created Successfully</p>
+            }
+        </div>
     );
 };
 

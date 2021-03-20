@@ -4,83 +4,83 @@
         "category": "Bike",
         "quantity": "1",
         "charge": "50",
-        "img": "*"
+        "img": "https://img.freepik.com/free-vector/man-ride-naked-bike-cartoon-speed-motorcycle-illustration_261104-19.jpg?size=664&ext=jpg"
     },
     {
         "id": "2",
         "category": "Bike",
         "quantity": "1",
         "charge": "60",
-        "img": "*"
+        "img": "https://img.freepik.com/free-vector/man-ride-naked-bike-cartoon-speed-motorcycle-illustration_261104-19.jpg?size=664&ext=jpg"
     },
     {
         "id": "3",
         "category": "Bike",
         "quantity": "1",
         "charge": "70",
-        "img": "*"
+        "img": "https://img.freepik.com/free-vector/man-ride-naked-bike-cartoon-speed-motorcycle-illustration_261104-19.jpg?size=664&ext=jpg"
     },
     {
         "id": "4",
         "category": "Car",
         "quantity": "4",
         "charge": "150",
-        "img": "*"
+        "img": "https://img2.pngio.com/sports-car-vector-motors-corporation-clip-art-png-1000x1000px-sports-car-vector-png-820_820.jpg"
     },
     {
         "id": "5",
         "category": "Car",
         "quantity": "4",
         "charge": "250",
-        "img": "*"
+        "img": "https://img2.pngio.com/sports-car-vector-motors-corporation-clip-art-png-1000x1000px-sports-car-vector-png-820_820.jpg"
     },
     {
         "id": "6",
         "category": "Car",
         "quantity": "4",
         "charge": "350",
-        "img": "*"
+        "img": "https://img2.pngio.com/sports-car-vector-motors-corporation-clip-art-png-1000x1000px-sports-car-vector-png-820_820.jpg"
     },
     {
         "id": "7",
         "category": "Bus",
         "quantity": "40",
         "charge": "5",
-        "img": "*"
+        "img": "https://cdna.artstation.com/p/marketplace/presentation_assets/000/187/396/large/file.jpg?1565777341"
     },
     {
         "id": "8",
         "category": "Bus",
         "quantity": "40",
         "charge": "10",
-        "img": "*"
+        "img": "https://cdna.artstation.com/p/marketplace/presentation_assets/000/187/396/large/file.jpg?1565777341"
     },
     {
         "id": "9",
         "category": "Bus",
         "quantity": "40",
         "charge": "15",
-        "img": "*"
+        "img": "https://cdna.artstation.com/p/marketplace/presentation_assets/000/187/396/large/file.jpg?1565777341"
     },
     {
         "id": "10",
         "category": "Train",
         "quantity": "200",
         "charge": "15",
-        "img": "*"
+        "img": "https://www.formfonts.com/files/1/12762/generic-speed-train-track-gauge-1435_FF_Model_ID12762_1_GEN_RR100_1_00.jpg"
     },
     {
         "id": "11",
         "category": "Train",
         "quantity": "200",
         "charge": "20",
-        "img": "*"
+        "img": "https://www.formfonts.com/files/1/12762/generic-speed-train-track-gauge-1435_FF_Model_ID12762_1_GEN_RR100_1_00.jpg"
     },
     {
         "id": "12",
         "category": "Train",
         "quantity": "200",
         "charge": "30",
-        "img": "*"
+        "img": "https://www.formfonts.com/files/1/12762/generic-speed-train-track-gauge-1435_FF_Model_ID12762_1_GEN_RR100_1_00.jpg"
     }
 ]
