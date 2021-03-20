@@ -13,28 +13,28 @@ const Home = () => {
                     <Card.Img variant="top" src="holder.js/100px180" />
                     <Card.Body>
                         <Card.Title>Bike</Card.Title>
-                        <Button onClick={() => setCategory()}variant="primary">Bike</Button>
+                        <Button onClick={() => setCategory('Bike')}variant="primary">Bike</Button>
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '12rem' }}>
                     <Card.Img variant="top" src="holder.js/100px180" />
                     <Card.Body>
                         <Card.Title>Car</Card.Title>
-                        <Button onClick={() => setCategory()} variant="primary">Car</Button>
+                        <Button onClick={() => setCategory('Car')} variant="primary">Car</Button>
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '12rem' }}>
                     <Card.Img variant="top" src="holder.js/100px180" />
                     <Card.Body>
                         <Card.Title>Bus</Card.Title>
-                        <Button onClick={() => setCategory()} variant="primary">Bus</Button>
+                        <Button onClick={() => setCategory('Bus')} variant="primary">Bus</Button>
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '12rem' }}>
                     <Card.Img variant="top" src="holder.js/100px180" />
                     <Card.Body>
                         <Card.Title>Train</Card.Title>
-                        <Button onClick={() => setCategory()} variant="primary">Train</Button>
+                        <Button onClick={() => setCategory('Train')} variant="primary">Train</Button>
                     </Card.Body>
                 </Card>
             </Container>
