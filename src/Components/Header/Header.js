@@ -14,7 +14,7 @@ const Header = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav nav-text">
-                        <p className="nav-link">{loggedInUser.name}</p>
+                        {/* <p className="nav-link">{loggedInUser.name}</p> */}
                         <Link className="nav-link" to="/home">Home</Link>
                         <Link className="nav-link" to="/destination">Destination</Link>
                         <Link className="nav-link" to="/blog">Blog</Link>
