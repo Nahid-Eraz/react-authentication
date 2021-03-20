@@ -2,8 +2,16 @@
     background-image: url("https://i.pinimg.com/originals/00/87/b4/0087b4f11244545759b4981338917ba5.jpg");
     width: 100%;
 }
-.container{
+.ride-container{
     display: flex;
     justify-content: space-between;
     margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.confirm-btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom:60px;
 }

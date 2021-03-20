@@ -5,7 +5,7 @@ const AvailableRides = (props) => {
     const { img, category, charge, quantity } = props.ride;
     return (
         <Container>
-            <Card style={{ width: '8rem' }}>
+            <Card style={{ width: '9rem' }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Text>
