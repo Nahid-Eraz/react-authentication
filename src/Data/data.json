@@ -1,0 +1,86 @@
+[
+    {
+        "id": "1",
+        "catagory": "Bike",
+        "quantity": "1",
+        "charge": "50",
+        "img": "*"
+    },
+    {
+        "id": "2",
+        "catagory": "Bike",
+        "quantity": "1",
+        "charge": "60",
+        "img": "*"
+    },
+    {
+        "id": "3",
+        "catagory": "Bike",
+        "quantity": "1",
+        "charge": "70",
+        "img": "*"
+    },
+    {
+        "id": "4",
+        "catagory": "Car",
+        "quantity": "4",
+        "charge": "150",
+        "img": "*"
+    },
+    {
+        "id": "5",
+        "catagory": "Car",
+        "quantity": "4",
+        "charge": "250",
+        "img": "*"
+    },
+    {
+        "id": "6",
+        "catagory": "Car",
+        "quantity": "4",
+        "charge": "350",
+        "img": "*"
+    },
+    {
+        "id": "7",
+        "catagory": "Bus",
+        "quantity": "40",
+        "charge": "5",
+        "img": "*"
+    },
+    {
+        "id": "8",
+        "catagory": "Bus",
+        "quantity": "40",
+        "charge": "10",
+        "img": "*"
+    },
+    {
+        "id": "9",
+        "catagory": "Bus",
+        "quantity": "40",
+        "charge": "15",
+        "img": "*"
+    },
+    {
+        "id": "10",
+        "catagory": "Train",
+        "quantity": "200",
+        "charge": "15",
+        "img": "*"
+    },
+    {
+        "id": "11",
+        "catagory": "Train",
+        "quantity": "200",
+        "charge": "20",
+        "img": "*"
+    },
+    {
+        "id": "12",
+        "catagory": "Train",
+        "quantity": "200",
+        "charge": "30",
+        "img": "*"
+    }
+]

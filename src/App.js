@@ -15,32 +15,36 @@ import Signin from './Components/Login/Signin';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
+export const CategoryContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({})
+  const [category, setCategory] = useState('Bike', 'Car', 'Bus', 'Train')
   return (
-    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <Router>
-        <Header />
-        <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/signin">
-            <Signin />
-          </Route>
-          <PrivateRoute path="/destination">
-            <Destination />
-          </PrivateRoute>
-          <Route exact path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
-    </UserContext.Provider>
+    <CategoryContext.Provider value={[category, setCategory]}>
+      <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+        <Router>
+          <Header />
+          <Switch>
+            <Route path="/home">
+              <Home />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/signin">
+              <Signin />
+            </Route>
+            <PrivateRoute path="/destination">
+              <Destination />
+            </PrivateRoute>
+            <Route exact path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
+      </UserContext.Provider>
+    </CategoryContext.Provider>
   );
 }
 
