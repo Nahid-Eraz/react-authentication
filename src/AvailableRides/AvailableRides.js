@@ -1,13 +1,21 @@
 import React from 'react';
+import { Card, Container } from 'react-bootstrap';
 
 const AvailableRides = (props) => {
-    const {img, category, charge} = props.ride;
+    const { img, category, charge, quantity } = props.ride;
     return (
-        <div>
-            <h2>Item</h2>
-            <p>{category}</p>
-            <p>$ {charge}</p>
-        </div>
+        <Container>
+            <Card style={{ width: '8rem' }}>
+                <Card.Img variant="top" src={img} />
+                <Card.Body>
+                    <Card.Text>
+                        <p>Ride: {category}</p>
+                        <p>Capacity: {quantity}</p>
+                        <p>$ {charge}</p>
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+        </Container>
     );
 };
 
