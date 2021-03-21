@@ -36,8 +36,7 @@ export const handleFbSignIn = () => {
             return user;
         })
         .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
+            // an error happened
         });
 }
 
@@ -53,7 +52,7 @@ export const handleSignOut = () => {
                 success: false
             }
             return signedOutUser;
-        }).catch((err) => {
+        }).catch((error) => {
             // an error happened
         })
 }

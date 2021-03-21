@@ -9,7 +9,6 @@ import { faFacebookSquare, faGoogle } from '@fortawesome/free-brands-svg-icons'
 
 
 function Signin() {
-    const [newUser, setNewUser] = useState(false);
     const [user, setUser] = useState({
         isSignedIn: false,
         name: '',
@@ -24,6 +23,7 @@ function Signin() {
     const history = useHistory();
     const location = useLocation();
     let { from } = location.state || { from: { pathname: "/" } };
+    console.log(loggedInUser);
 
     const googleSignIn = () => {
         handleGoogleSignIn()
@@ -36,13 +36,6 @@ function Signin() {
         handleFbSignIn()
             .then(res => {
                 handleResponses(res, true);
-            })
-    }
-
-    const signOut = () => {
-        handleSignOut()
-            .then(res => {
-                handleResponses(res, false);
             })
     }
 

@@ -1,14 +1,13 @@
 import { useContext, useState } from 'react';
 import { UserContext } from "../../App";
 import { useHistory, useLocation } from "react-router";
-import { handleGoogleSignIn, initializeLogFramework, handleSignOut, handleFbSignIn, signInWithEmailAndPassword } from './AccountManagement';
+import { handleGoogleSignIn, initializeLogFramework, handleFbSignIn, signInWithEmailAndPassword } from './AccountManagement';
 import { Link } from 'react-router-dom';
 import './Login.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faGoogle } from '@fortawesome/free-brands-svg-icons'
 
 function Login() {
-    const [newUser, setNewUser] = useState(false);
     const [user, setUser] = useState({
         isSignedIn: false,
         name: '',
@@ -23,6 +22,7 @@ function Login() {
     const history = useHistory();
     const location = useLocation();
     let { from } = location.state || { from: { pathname: "/" } };
+    console.log(loggedInUser);
 
     const googleSignIn = () => {
         handleGoogleSignIn()
@@ -35,13 +35,6 @@ function Login() {
         handleFbSignIn()
             .then(res => {
                 handleResponses(res, true);
-            })
-    }
-
-    const signOut = () => {
-        handleSignOut()
-            .then(res => {
-                handleResponses(res, false);
             })
     }
 
@@ -108,7 +101,7 @@ function Login() {
             </div>
             <p style={{ color: 'red' }}>{user.error}</p>
             {
-                user.success && <p style={{ color: 'green' }}>User Created Successfully</p>
+                user.success && <p style={{ color: 'green' }}>User Logged In Successfully</p>
             }
         </div>
     );
