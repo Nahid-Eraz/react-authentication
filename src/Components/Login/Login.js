@@ -4,7 +4,6 @@ import { useHistory, useLocation } from "react-router";
 import { handleGoogleSignIn, initializeLogFramework, handleSignOut, handleFbSignIn, signInWithEmailAndPassword } from './AccountManagement';
 import { Link } from 'react-router-dom';
 import './Login.css';
-import { Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faGoogle } from '@fortawesome/free-brands-svg-icons'
 

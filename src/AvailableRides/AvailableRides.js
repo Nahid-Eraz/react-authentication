@@ -9,7 +9,6 @@ const AvailableRides = (props) => {
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Text>
-                        <p>ok</p>
                     </Card.Text>
                 </Card.Body>
             </Card>
