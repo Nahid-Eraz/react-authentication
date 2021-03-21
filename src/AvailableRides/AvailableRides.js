@@ -9,9 +9,7 @@ const AvailableRides = (props) => {
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Text>
-                        <p>Ride: {category}</p>
-                        <p>Capacity: {quantity}</p>
-                        <p>$ {charge}</p>
+                        <p>ok</p>
                     </Card.Text>
                 </Card.Body>
             </Card>

@@ -4,14 +4,9 @@
 }
 .ride-container{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-left: 100px;
     margin-top: 50px;
     margin-bottom: 40px;
-}
-.confirm-btn{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    margin-bottom:60px;
 }

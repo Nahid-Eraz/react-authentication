@@ -2,85 +2,52 @@
     {
         "id": "1",
         "category": "Bike",
-        "quantity": "1",
-        "charge": "50",
+        "capacity": "1",
+        "class1": "Regular",
+        "class2": "Premium",
+        "class3": "Deluxe",
+        "charge1": "50",
+        "charge2": "70",
+        "charge3": "80",
         "img": "https://img.freepik.com/free-vector/man-ride-naked-bike-cartoon-speed-motorcycle-illustration_261104-19.jpg?size=664&ext=jpg"
     },
-    {
-        "id": "2",
-        "category": "Bike",
-        "quantity": "1",
-        "charge": "60",
-        "img": "https://img.freepik.com/free-vector/man-ride-naked-bike-cartoon-speed-motorcycle-illustration_261104-19.jpg?size=664&ext=jpg"
-    },
-    {
-        "id": "3",
-        "category": "Bike",
-        "quantity": "1",
-        "charge": "70",
-        "img": "https://img.freepik.com/free-vector/man-ride-naked-bike-cartoon-speed-motorcycle-illustration_261104-19.jpg?size=664&ext=jpg"
-    },
+    
     {
         "id": "4",
         "category": "Car",
-        "quantity": "4",
-        "charge": "150",
+        "capacity": "4",
+        "class1": "Regular",
+        "class2": "Premium",
+        "class3": "Deluxe",
+        "charge1": "100",
+        "charge2": "120",
+        "charge3": "180",
         "img": "https://img2.pngio.com/sports-car-vector-motors-corporation-clip-art-png-1000x1000px-sports-car-vector-png-820_820.jpg"
     },
-    {
-        "id": "5",
-        "category": "Car",
-        "quantity": "4",
-        "charge": "250",
-        "img": "https://img2.pngio.com/sports-car-vector-motors-corporation-clip-art-png-1000x1000px-sports-car-vector-png-820_820.jpg"
-    },
-    {
-        "id": "6",
-        "category": "Car",
-        "quantity": "4",
-        "charge": "350",
-        "img": "https://img2.pngio.com/sports-car-vector-motors-corporation-clip-art-png-1000x1000px-sports-car-vector-png-820_820.jpg"
-    },
+    
     {
         "id": "7",
         "category": "Bus",
-        "quantity": "40",
-        "charge": "5",
+        "capacity": "40",
+        "class1": "Regular",
+        "class2": "Premium",
+        "class3": "Deluxe",
+        "charge1": "10",
+        "charge2": "15",
+        "charge3": "40",
         "img": "https://cdna.artstation.com/p/marketplace/presentation_assets/000/187/396/large/file.jpg?1565777341"
     },
-    {
-        "id": "8",
-        "category": "Bus",
-        "quantity": "40",
-        "charge": "10",
-        "img": "https://cdna.artstation.com/p/marketplace/presentation_assets/000/187/396/large/file.jpg?1565777341"
-    },
-    {
-        "id": "9",
-        "category": "Bus",
-        "quantity": "40",
-        "charge": "15",
-        "img": "https://cdna.artstation.com/p/marketplace/presentation_assets/000/187/396/large/file.jpg?1565777341"
-    },
-    {
-        "id": "10",
-        "category": "Train",
-        "quantity": "200",
-        "charge": "15",
-        "img": "https://media.istockphoto.com/vectors/monochrome-pattern-for-design-with-retro-train-on-rails-vector-vector-id1062069668?k=6&m=1062069668&s=612x612&w=0&h=A1Cxu5waDVwNg5k2dnQ1iZ0dWZYFO6rTObo4Yxk3ioU="
-    },
-    {
-        "id": "11",
-        "category": "Train",
-        "quantity": "200",
-        "charge": "20",
-        "img": "https://media.istockphoto.com/vectors/monochrome-pattern-for-design-with-retro-train-on-rails-vector-vector-id1062069668?k=6&m=1062069668&s=612x612&w=0&h=A1Cxu5waDVwNg5k2dnQ1iZ0dWZYFO6rTObo4Yxk3ioU="
-    },
+    
     {
         "id": "12",
         "category": "Train",
-        "quantity": "200",
-        "charge": "30",
+        "capacity": "200",
+        "class1": "Regular",
+        "class2": "Premium",
+        "class3": "Deluxe",
+        "charge1": "5",
+        "charge2": "10",
+        "charge3": "20",
         "img": "https://media.istockphoto.com/vectors/monochrome-pattern-for-design-with-retro-train-on-rails-vector-vector-id1062069668?k=6&m=1062069668&s=612x612&w=0&h=A1Cxu5waDVwNg5k2dnQ1iZ0dWZYFO6rTObo4Yxk3ioU="
     }
 ]
