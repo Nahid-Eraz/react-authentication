@@ -21,3 +21,6 @@ button :hover{
 .destination-input-box p{
     color: white;
 }
+.destination-container{
+    margin-top: 5%;
+}

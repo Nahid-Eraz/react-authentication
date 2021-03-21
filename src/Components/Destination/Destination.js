@@ -1,12 +1,12 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import Gmap from '../Gmap/Gmap';
 import './Destination.css'
 
 const Destination = () => {
-    const { category } = useParams();
     return (
-        <Container>
+        <Container className="destination-container">
             <Row>
                 <Col md={5}>
                     <div className='destination-input-box'>
@@ -22,7 +22,7 @@ const Destination = () => {
                     </div>
                 </Col>
                 <Col md={7}>
-                    <img src='' alt="" />
+                    <Gmap></Gmap>
                 </Col>
             </Row>
         </Container>

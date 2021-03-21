@@ -11,6 +11,7 @@ import Header from './Components/Header/Header';
 import { createContext, useState } from 'react';
 import Signin from './Components/Login/Signin';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Blog from './Components/Blog/Blog';
 
 export const UserContext = createContext();
 export const CategoryContext = createContext();
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route path="/signin">
               <Signin />
+            </Route>
+            <Route path="/blog">
+              <Blog />
             </Route>
             <PrivateRoute path="/destination/:category">
               <Destination />

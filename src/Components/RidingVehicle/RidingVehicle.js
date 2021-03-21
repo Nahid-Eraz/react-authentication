@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 
 const RidingVehicle = (props) => {
@@ -11,12 +11,11 @@ const RidingVehicle = (props) => {
     }
 
     return (
-        <div>
+        <div onClick={() => handleDestination(category)}>
             <Card style={{ width: '12rem' }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Title>{category}</Card.Title>
-                    <Button onClick={() => handleDestination(category)} variant="primary">Go somewhere</Button>
                 </Card.Body>
             </Card>
         </div>
