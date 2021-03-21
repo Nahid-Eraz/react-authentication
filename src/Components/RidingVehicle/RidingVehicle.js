@@ -1,10 +1,14 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 
 const RidingVehicle = (props) => {
 
     const { img, category } = props.ride;
-    console.log(props.ride);
+    const history = useHistory();
+    const handleDestination=  (category) => {
+        history.push(`/destination/${category}`);
+    }
 
     return (
         <div>
@@ -12,7 +16,7 @@ const RidingVehicle = (props) => {
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Title>{category}</Card.Title>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button onClick={() => handleDestination(category)} variant="primary">Go somewhere</Button>
                 </Card.Body>
             </Card>
         </div>

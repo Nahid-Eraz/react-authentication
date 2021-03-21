@@ -33,7 +33,7 @@ function App() {
             <Route path="/signin">
               <Signin />
             </Route>
-            <PrivateRoute path="/destination">
+            <PrivateRoute path="/destination/:category">
               <Destination />
             </PrivateRoute>
             <Route exact path="/">
