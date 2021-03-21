@@ -1,0 +1,23 @@
+.destination-input-box{
+    padding: 5px;
+    background-color: rgb(248, 109, 85);
+    border-radius: 5px;
+    width: 60%;
+}
+
+.destination-input-box input{
+    width:100%;
+    border-radius: 5px;
+}
+.destination-input-box button{
+    width: 100%;
+    color: black;
+    background-color: gray;
+    border-radius: 5px;
+}
+button :hover{
+    background-color: lightgray;
+}
+.destination-input-box p{
+    color: white;
+}

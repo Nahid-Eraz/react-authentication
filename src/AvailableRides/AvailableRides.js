@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Container } from 'react-bootstrap';
 
 const AvailableRides = (props) => {
-    const { img, category, charge, quantity } = props.ride;
+    const { img } = props.ride;
     return (
         <Container>
             <Card style={{ width: '9rem' }}>

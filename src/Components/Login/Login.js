@@ -55,7 +55,6 @@ function Login() {
     }
 
     const handleBlur = (e) => {
-        // debugger;
         let isFieldValid = true;
         if (e.target.name === 'email') {
             isFieldValid = /\S+@\S+\.\S+/.test(e.target.value);
